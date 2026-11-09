@@ -38,3 +38,20 @@ O processo é linear e eficiente, seguindo os passos abaixo:
   * **Serviço de E-mail:** Gmail API (via Trigger).
   * **Inteligência Artificial:** Google Gemini Chat (dois modelos em cadeia).
   * **Gerenciamento de Projetos:** Trello API.
+
+
+## Estrutura do repositório
+
+| Arquivo | Finalidade |
+|---|---|
+| [workflows/triagem-emails-trello.json](workflows/triagem-emails-trello.json) | Workflow importável no n8n |
+
+## Como importar e configurar
+
+1. Baixe os arquivos JSON da pasta `workflows/`.
+2. No n8n, importe cada arquivo como um workflow.
+3. Associe suas próprias credenciais aos nós de integração.
+4. Revise IDs de planilhas, agendas, quadros, listas, endereços e URLs de webhook para o seu ambiente.
+5. Confira os gatilhos e execute um teste manual antes de ativar o workflow.
+
+Os arquivos são exportações do n8n; não há servidor Python ou frontend separado neste repositório. As credenciais devem ser configuradas no n8n. Importar um arquivo não valida as integrações externas.
